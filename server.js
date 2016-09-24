@@ -5,21 +5,42 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var content = {
-    title: 'Article-Three | Retheesh Gopinatha Menon',
+var articleOne = {
+    title: 'Article-One | Retheesh Gopinatha Menon',
     heading: 'Article One',
     date: 'Sep 21.',
-    content: ` <p>
-                    This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.
-                </p>
-                
-                 <p>
-                    This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.
-                </p>
-                
-                 <p>
-                    This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.
-                </p>`
+    content: ` 
+        <p>
+            This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.
+        </p>
+
+        <p>
+            This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.
+        </p>
+
+        <p>
+            This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.This is the article one.
+        </p>`
+};
+
+var articleTwo = {
+    title: 'Article-Two | Retheesh Gopinatha Menon',
+    heading: 'Article Two',
+    date: 'Sep 22.',
+    content: ` 
+        <p>
+            This is the article two.
+        </p>`
+};
+
+var articleThree = {
+    title: 'Article-Three | Retheesh Gopinatha Menon',
+    heading: 'Article Three',
+    date: 'Sep 23.',
+    content: ` 
+        <p>
+            This is the article three.
+        </p>`
 };
 
 app.get('/', function (req, res) {
