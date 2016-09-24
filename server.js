@@ -32,7 +32,15 @@ var articles = {
                 This is the article Two.
             </p>`
     },
-    var articleThree: {}
+    var articleThree: {
+         title: 'Article-Three | Retheesh Gopinatha Menon',
+        heading: 'Article Three',
+        date: 'Sep 22.',
+         content: ` 
+            <p>
+                This is the article Three.
+            </p>`
+    }
 }
 
 
