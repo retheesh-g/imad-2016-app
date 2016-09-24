@@ -23,27 +23,7 @@ var articleOne = {
         </p>`
 };
 
-var articleTwo = {
-    title: 'Article-Two | Retheesh Gopinatha Menon',
-    heading: 'Article Two',
-    date: 'Sep 22.',
-    content: ` 
-        <p>
-            This is the article two.
-        </p>`
-};
-
-var articleThree = {
-    title: 'Article-Three | Retheesh Gopinatha Menon',
-    heading: 'Article Three',
-    date: 'Sep 23.',
-    content: ` 
-        <p>
-            This is the article three.
-        </p>`
-};
-
-var htmlTemplate = '
+var htmlTemplate = `
     <html>
     <head>
         <title>
@@ -60,20 +40,21 @@ var htmlTemplate = '
             <hr/>
             
             <h3>
-              
+              ${heading}
             </h3>
             
             <div>
-              
+              ${date}
             </div>
             
             <div>
-                
+                ${content}
             </div>
         </div>
     </body>
 </html>
-';
+`;
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
