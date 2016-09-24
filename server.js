@@ -41,7 +41,7 @@ var articles = {
                 This is the article Three.
             </p>`
     }
-}
+};
 
 
 function createTemplate(data){
