@@ -4,4 +4,5 @@ button.onclick = function(){
   counter = counter + 1; 
   var span = document.getElementById("count");
   span.innerHTML = counter.toString();
+  alert("Hello\nHow are you?");
 };
